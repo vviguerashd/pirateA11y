@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Pirate A11y | Practice your A11y skills</title>
+		<link href="framework-out-of-scope/css/bootstrap.min.css" rel="stylesheet">
+		<link href="framework-out-of-scope/css/all.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<header class="site-header" role="banner">
+			<div class="top">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<p>Yo ho, yo ho, an a11y life for me!</p>
+						</div>
+						<div class="col-sm-6">
+							<ul class="list-inline pull-right">
+								<li><a href="https://www.facebook.com/LevelAccessA11y/"><i class="fab fa-facebook"></i></a></li>
+								<li><a href="https://twitter.com/levelaccessa11y"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="https://www.linkedin.com/company/level-access"><i class="fab fa-linkedin"></i></a></li>
+								<li><a href="mailto:info@levelaccess.com"><i class="far fa-envelope"></i></a></li>
+								<li><a href="tel:18008899659"><i class="fas fa-phone"></i> 1.800.889.9659</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
+					<span class="sr-only">Toggle Navigation</span>
+					<i class="fa fa-bars"></i>
+					</button>
+					<a href="index.html" class="navbar-brand">
+					<img src="framework-out-of-scope/img/logo.png" alt="Post">
+					</a>
+					<div class="collapse navbar-collapse" id="bs-navbar-collapse">
+						<ul class="nav navbar-nav main-navbar-nav">
+							<li class="active"><a href="index.html" title="">HOME</a></li>
+							<li class="dropdown">
+								<a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Famous Pirates <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="https://en.wikipedia.org/wiki/Blackbeard" title="">Blackbeard</a></li>
+									<li><a href="https://en.wikipedia.org/wiki/William_Kidd" title="">Captain Kidd</a></li>
+									<li><a href="https://en.wikipedia.org/wiki/Captain_Hook" title="">Captian Hook</a></li>
+									<li><a href="https://en.wikipedia.org/wiki/Pittsburgh_Pirates" title="">Pittsburg</a></li>
+								</ul>
+							</li>
+							<li><a href="https://www.irs.gov/" title="">Pirate Services</a></li>
+							<li><a href="https://en.wikipedia.org/wiki/Queen_Anne%27s_Revenge" title="">Pirate Ships</a></li>
+							<li><a href="#contactModal" data-toggle="modal" data-target="#contactModal">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main class="site-main">
+			<section class="hero_area">
+				<div class="hero_content">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+								<h1>Pirate A11y</h1>
+								<h2>For accessibility testing practice!</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="boxes_area">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="box">
+								<h3>VISUAL</h3>
+								<p>Blind, low vision, and colorblind users will have difficulties percieving your page. Is it structured correctly, does every visual element have a text equivelent?</p>
+								<i class="fa fa-blind"></i>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="box">
+								<h3>MOTOR SKILLS</h3>
+								<p>Users with motor skills dissabilities are not able to use a mouse to browse your site. Can you do the same and navigate this site without one?</p>
+								<i class="fab fa-accessible-icon"></i>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="box">
+								<h3>OTHERS</h3>
+								<p>Users with speech and hearing disabilities require captions on all video and audio multimedia. Users with cognative disablities require clean consistent navigation and design.</p>
+								<i class="fa fa-deaf"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="services">
+				<h2 class="section-title">Shiver Me Timbers</h2>
+				<p class="desc">Some pirate phrases for you <abbr title="Experienced pirate or sailor">old salts</abbr>.</p>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="media">
+								<div class="media-left media-middle">
+									<i class="fas fa-skull-crossbones fa-fw"></i>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">Dead Men Tell No Tales</h4>
+									<p>An expression that means dead people will not betray any secrets. Used as a threat to kill someone, or a way of saying there were no survivors.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="media">
+								<div class="media-left media-middle">
+									<i class="fa fa-ship fa-fw"></i>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">Batten Down the Hatches</h4>
+									<p>From the practice aboard a ship of sealing hatches to prevent water getting below-decks in a storm by using covers secured by strips of material, called battens, firmly attached to the frame of the hatch opening.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="media">
+								<div class="media-left media-middle">
+									<i class="fas fa-lock-open fa-fw"></i>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">Davy Jones' Locker</h4>
+									<p>Graveyard at the bottom of the sea for those killed or drowned. It is used as a euphemism for drowning or shipwrecks in which the sailors' and ships' remains are consigned to the depths of the ocean (to be sent to Davy Jones' Locker).</p>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="media">
+								<div class="media-left media-middle">
+									<i class="fas fa-money-bill fa-fw"></i>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">Hornswaggle</h4>
+									<p>To swindle something, usually money, out of someone else. Though the origins of this word are unknown, its first recorded use appears to be in 1829.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="media">
+								<div class="media-left media-middle">
+									<i class="fas fa-umbrella-beach fa-fw"></i>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">Marooned</h4>
+									<p>To be abandoned with no food, drink or possessions. It is also the title of a 1969 SciFi film staring Gregory Peck. </p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="media">
+								<div class="media-left media-middle">
+									<i class="fas fa-mountain fa-fw"></i>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">Landlubber</h4>
+									<p>Someone without sailing ability. Not to be confused with Scallywag, which is what an experienced pirate would call a newbie.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="services">
+				<h2 class="section-title">Barbados and Piracy</h2>
+				<p class="desc">Barbados is known for two <b>pirates of the Caribbean</b> - Sam Lord and Stede Bonnet.</p>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="media-body">
+								<a href="framework-out-of-scope/img/barbados-895144.png" target="_blank">
+								<img src="framework-out-of-scope/img/barbados-895144.png" alt="Map" class="img-responsive">
+								</a>
+							</div>
+						</div>
+						<div class="col-md-8 col-sm-6 col-xs-12">
+							<div class="media-body">
+								<p><strong>Sam Lord</strong></p>
+								<p>
+									Sam Lord must have been one of the most unusual pirates of the caribbean! Rather than taking to the seas Sam Lord found a unique, and very profitable, way to plunder ships in the Caribbean.<br /><br />Legend has it that Sam Lord hung lanterns in the coconut trees on the beach near his castle to attract ships. Captains mistook the lanterns for the lights of the capital city and wrecked their ships on the reefs.<br /><br />Sam Lord, one of the most creative pirates of the Caribbean region, would then plunder the ships!
+								</p>
+								<p><strong>Stede Bonnet</strong></p>
+								<p>
+									Known as the pirate gentleman, Stede Bonnet became one of the pirates of the Caribbean in a most unusual way!<br /><br />A retired British army major and well off plantation owner in Barbados, the middle aged Major Stede Bonnet suddenly turned to piracy in early 1717 and actually <em>purchased</em> his own pirate ship, an unheard of act among the pirates of the Caribbean!<br /><br />Bonnet sailed his pirate ship "Revenge" off the New England Coast, capturing and burning several ships, before returning to the Caribbean. Here he befriended perhaps the most famous of the pirates of the Caribbean - Blackbeard!
+								</p>
+								<p>These two pirates of the Caribbean led unusual lives and live on in legend even today...</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="home-area">
+				<div class="home_content">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+								<h2 class="sub_title">FAMOUS PIRATE MOVIES</h2>
+							</div>
+							<div class="home_list">
+								<ul>
+									<li class="col-md-3 col-sm-6 col-xs-12">
+										<div class="thumbnail">
+											<a href="https://en.wikipedia.org/wiki/Muppet_Treasure_Island">
+											<img src="framework-out-of-scope/img/movie1.jpg" class="img-responsive img-rounded" alt="Post">
+											</a>
+											<div class="caption">
+												<h3><a href="https://en.wikipedia.org/wiki/Muppet_Treasure_Island">Treasure Island</a></h3>
+												<p>There have been lots of versions of this over the years, but the version staring the Muppets is the best.</p>
+												<a href="https://en.wikipedia.org/wiki/Muppet_Treasure_Island" class="btn btn-link" role="button">More</a>
+											</div>
+										</div>
+									</li>
+									<li class="col-md-3 col-sm-6 col-xs-12">
+										<div class="thumbnail">
+											<a href="https://en.wikipedia.org/wiki/The_Sea_Hawk_(1940_film)"><img src="framework-out-of-scope/img/movie2.jpg" class="img-responsive img-rounded" alt="Post"></a>
+											<div class="caption">
+												<h3><a href="https://en.wikipedia.org/wiki/The_Sea_Hawk_(1940_film)">The Sea Hawk</a></h3>
+												<p>The famous Errol Flynn movie. It also has one of the best fim scores by Erich Korngold.</p>
+												<a href="https://en.wikipedia.org/wiki/The_Sea_Hawk_(1940_film)" class="btn btn-link" role="button">More</a>
+											</div>
+										</div>
+									</li>
+									<li class="col-md-3 col-sm-6 col-xs-12">
+										<div class="thumbnail">
+											<a href="https://en.wikipedia.org/wiki/The_Pirates_of_Penzance_(film)">
+											<img src="framework-out-of-scope/img/movie3.jpg" class="img-responsive img-rounded" alt="Post">
+											</a>
+											<div class="caption">
+												<h3><a href="https://en.wikipedia.org/wiki/The_Pirates_of_Penzance_(film)">Pirates of Penzance</a></h3>
+												<p>Based on Gilbert and Sullivan's 1879 comic opera of the same name, this film stars Kevin Kline, Angela Lansbury, and Linda Ronstadt. </p>
+												<a href="https://en.wikipedia.org/wiki/The_Pirates_of_Penzance_(film)" class="btn btn-link" role="button">More</a>
+											</div>
+										</div>
+									</li>
+									<li class="col-md-3 col-sm-6 col-xs-12">
+										<div class="thumbnail">
+											<a href="https://en.wikipedia.org/wiki/Pirates_of_the_Caribbean:_The_Curse_of_the_Black_Pearl">
+											<img src="framework-out-of-scope/img/movie4.jpg" class="img-responsive img-rounded" alt="Post">
+											</a>
+											<div class="caption">
+												<h3><a href="https://en.wikipedia.org/wiki/Pirates_of_the_Caribbean:_The_Curse_of_the_Black_Pearl">Pirates of the Caribbean: The Curse of the Black Pearl</a></h3>
+												<p>The first film in the Pirates of the Caribbean film series. One of the only movies ever based on an amusement park ride.</p>
+												<a href="https://en.wikipedia.org/wiki/Pirates_of_the_Caribbean:_The_Curse_of_the_Black_Pearl" class="btn btn-link" role="button">More</a>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-sm-9 home_bottom">
+								<h2 class="sub_title">REFERENCES</h2>
+								<div class="clearfix"></div>
+								<div class="row">
+									<div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="6000" id="myCarousel">
+										<div class="carousel-inner">
+											<div class="item active">
+												<div class="col-md-2 col-sm-6 col-xs-12 p10">
+													<a href="framework-out-of-scope/page2.html"><img src="framework-out-of-scope/img/mdpc3.png" class="img-responsive" alt="Moby Dick Pleasure Cruises"></a>
+												</div>
+											</div>
+											<div class="item">
+												<div class="col-md-2 col-sm-6 col-xs-12 p10">
+													<a href="framework-out-of-scope/page2.html"><img src="framework-out-of-scope/img/kb.png" class="img-responsive" alt="Kraken Brothers"></a>
+												</div>
+											</div>
+											<div class="item">
+												<div class="col-md-2 col-sm-6 col-xs-12">
+													<a href="framework-out-of-scope/page2.html"><img src="framework-out-of-scope/img/fdt.png" class="img-responsive" alt="James Cook Tours"></a>
+												</div>
+											</div>
+											<div class="item">
+												<div class="col-md-2 col-sm-6 col-xs-12">
+													<a href="framework-out-of-scope/page2.html"><img src="framework-out-of-scope/img/pe.png" class="img-responsive" alt="Pinaple Express"></a>
+												</div>
+											</div>
+											<div class="item">
+												<div class="col-md-2 col-sm-6 col-xs-12">
+													<a href="framework-out-of-scope/page2.html"><img src="framework-out-of-scope/img/dj.png" class="img-responsive" alt="Davy Jones Marine Salvage"></a>
+												</div>
+											</div>
+											<div class="item">
+												<div class="col-md-2 col-sm-6 col-xs-12">
+													<a href="framework-out-of-scope/page2.html"><img src="framework-out-of-scope/img/mar.png" class="img-responsive" alt="Dogs are good"></a>
+												</div>
+											</div>
+											<div class="item">
+												<div class="col-md-2 col-sm-6 col-xs-12">
+													<a href="framework-out-of-scope/page2.html"><img src="framework-out-of-scope/img/smt.png" class="img-responsive" alt="Shiver me Timbers"></a>
+												</div>
+											</div>
+											<div class="item">
+												<div class="col-md-2 col-sm-6 col-xs-12">
+													<a href="framework-out-of-scope/page2.html"><img src="framework-out-of-scope/img/ss.png" class="img-responsive" alt="Siren Song Karaoke and Tiki bar"></a>
+												</div>
+											</div>
+											<div class="item">
+												<div class="col-md-2 col-sm-6 col-xs-12">
+													<a href="framework-out-of-scope/page2.html"><img src="framework-out-of-scope/img/mizen.png" class="img-responsive" alt="Have you seen the mizen mast?"></a>
+												</div>
+											</div>
+										</div>
+										<a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+										<a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<h2 class="sub_title w10">AHOY THERE, MATEY</h2>
+								<div class="clearfix"></div>
+								<div class="login-form-1">
+									<form id="login-form" class="text-left">
+										<div class="login-form-main-message"></div>
+										<div class="main-login-form">
+											<div class="login-group">
+												<div class="form-group">
+													<label for="ad" class="sr-only">Name</label>
+													<input type="text" class="form-control" id="ad" name="ad" placeholder="Name">
+												</div>
+												<div class="form-group">
+													<label for="tel" class="sr-only">Phone Number</label>
+													<input type="text" class="form-control" id="tel" name="tel" placeholder="Phone Number">
+												</div>
+											</div>
+											<button type="submit" class="login-button"><i class="fas fa-chevron-right"></i></button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12 fbox">
+						<h4>Pirate A11y</h4>
+						<p class="text">All images used under the terms of the license agreement from <a href="https://pixabay.com/service/terms/#license">Pixabay</a>. We may be bloodthirsty pirates, but we are not about to break copyright laws.</p>
+						<ul class="list-inline">
+							<li><a href="https://www.facebook.com/LevelAccessA11y/"><i class="fab fa-facebook-square"></i></a></li>
+							<li><a href="https://twitter.com/levelaccessa11y"><i class="fab fa-twitter-square"></i></a></li>
+							<li><a href="https://www.linkedin.com/company/level-access"><i class="fab fa-linkedin"></i></a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 fbox">
+						<h4>PIECES O'EIGHT</h4>
+						<ul class="big">
+							<li><a href="framework-out-of-scope/page2.html">Piece One</a></li>
+							<li><a href="framework-out-of-scope/page2.html">Piece Two</a></li>
+							<li><a href="framework-out-of-scope/page2.html">Piece Three</a></li>
+							<li><a href="framework-out-of-scope/page2.html">Piece Four</a></li>
+							<li><a href="framework-out-of-scope/page2.html">Piece Five</a></li>
+							<li><a href="framework-out-of-scope/page2.html">Piece Six</a></li>
+							<li><a href="framework-out-of-scope/page2.html">Piece Seven</a></li>
+							<li><a href="framework-out-of-scope/page2.html">Piece Eight</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 fbox">
+						<table class="table table-hover table-sm">
+							<thead>
+								<tr>
+									<th>Trainer</th>
+									<th>Email</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Kevin</td>
+									<td><a href="mailto:kevin.murphy@levelaccess.com">Email</a></td>
+								</tr>
+								<tr>
+									<td>Kara</td>
+									<td><a href="mailto:kara.vanroekel@levelaccess.com">Email</a></td>
+								</tr>
+								<tr>
+									<td>Kim</td>
+									<td><a href="mailto:kim.collins@levelaccess.com">Email</a></td>
+								</tr>
+								<tr>
+									<td>Gavin</td>
+									<td><a href="mailto:gavin.ogston@levelaccess.com">Email</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 fbox">
+						<h4>Level Access</h4>
+						<p class="text">This sample website was created for accessibility training by Level Access.</p>
+						<p><a href="tel:18008899659"><i class="fas fa-phone"></i> 1.800.889.9659</a></p>
+						<p><a href="mailto:info@levelaccess.com"><i class="far fa-envelope"></i> info@levelaccess.com</a></p>
+					</div>
+				</div>
+			</div>
+			<div id="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<p class="pull-left">(c) 1650 Pirate A11y</p>
+						</div>
+						<div class="col-md-8">
+							<ul class="list-inline navbar-right">
+								<li>A11Y TOOLS</li>
+								<li><a href="https://www.ssa.gov/accessibility/andi/help/install.html" onclick="window.open(this.href); return false;">ANDI</a></li>
+								<li><a href="https://webaccessibility.com/#Home" onclick="window.open(this.href); return false;">LEVEL ACCESS</a></li>
+								<li><a href="https://whatsock.com/training/matrices/visual-aria.htm" onclick="window.open(this.href); return false;">VISUAL ARIA</a></li>
+								<li><a href="https://www.w3.org/WAI/" onclick="window.open(this.href); return false;">W3C ACCESSIBILITY</a></li>
+								<li><a href="https://validator.w3.org/" onclick="window.open(this.href); return false;">W3C VALIDATOR</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="modal fade" tabindex="-1" role="dialog" id="contactModal" aria-labelledby="contactModalTitle" aria-describedby="contactModalBody">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="contactModalTitle">Contact Pirate A11y</h4>
+					</div>
+					<div class="modal-body" id="contactModalBody">
+						<form>
+							<div class="form-group">
+								<label>First Name *</label>
+								<input id="firstName" class="form-control" type="text">
+							</div>
+							<div class="form-group">
+								<label>Last Name *</label>
+								<input id="lastName" class="form-control" type="text">
+							</div>
+							<div class="form-group">
+								<label>Phone Number *</label>
+								<input id="phoneNumber" class="form-control" type="tel">
+							</div>
+							<div class="form-group">
+								<label>Message *</label>
+								<textarea id="message" class="form-control"></textarea>
+							</div>
+							<p class="small">NOTE: This form does not actually do anything.</p>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<!-- Note: this button only closes the modal, which is intentional for this testing document. Consisder that aspect out of scope. -->
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Send</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="framework-out-of-scope/js/jquery.min.js"></script>
+		<script src="framework-out-of-scope/js/bootstrap.min.js"></script>
+		<script>
+			$('.carousel[data-type="multi"] .item').each(function () {
+				var next = $(this).next();
+				if (!next.length) {
+					next = $(this).siblings(':first');
+				}
+				next.children(':first-child').clone().appendTo($(this));
+			
+				for (var i = 0; i < 4; i++) {
+					next = next.next();
+					if (!next.length) {
+						next = $(this).siblings(':first');
+					}
+					next.children(':first-child').clone().appendTo($(this));
+				}
+			});		  
+		</script>
+	</body>
+</html>
